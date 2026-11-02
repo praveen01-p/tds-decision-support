@@ -1,0 +1,17 @@
+{
+ "version": "0.1-DRAFT",
+ "status": "DRAFT: rates/thresholds from secondary sources + my recollection of Finance Act 2025; MUST be verified by a CA against the Income-tax Act 2025 (s.393) before any real use. 'item' = table item; 'VERIFY' = not confirmed.",
+ "cutover": "2026-04-01",
+ "no_pan_rate": 0.20,
+ "categories": {
+  "contractor_work": {"desc": "Work contracts: repairs, civil work, housekeeping/labour supply, printing jobs", "label_2025": "s.393(1) Table Sl.6(i)", "label_1961": "194C", "rate": {"individual_huf": 0.01, "other": 0.02}, "single_threshold": 30000, "agg_threshold": 100000},
+  "professional_fees": {"desc": "Fees for professional services: legal, accounting, medical, architecture, consultancy by professionals", "label_2025": "s.393(1) Table Sl.6(iii)", "label_1961": "194J", "rate": {"individual_huf": 0.10, "other": 0.10}, "agg_threshold": 50000},
+  "technical_fees": {"desc": "Fees for technical services (not professional)", "label_2025": "s.393(1) Table Sl.6(iii) [VERIFY]", "label_1961": "194J", "rate": {"individual_huf": 0.02, "other": 0.02}, "agg_threshold": 50000},
+  "rent_building": {"desc": "Rent of land, building or furniture", "label_2025": "s.393(1) Table Sl.2 [item VERIFY]", "label_1961": "194I(b)", "rate": {"individual_huf": 0.10, "other": 0.10}, "agg_threshold": 600000},
+  "commission_brokerage": {"desc": "Commission or brokerage (not insurance)", "label_2025": "s.393(1) Table [item VERIFY]", "label_1961": "194H", "rate": {"individual_huf": 0.02, "other": 0.02}, "agg_threshold": 20000},
+  "goods_purchase": {"desc": "Purchase of goods only; no TDS under this tool (s.194Q-type buyer TDS out of scope)", "no_tds": true},
+  "advertising_ambiguous": {"desc": "Advertising / events: reported to have changed treatment; needs CA", "ambiguous": true},
+  "software_ambiguous": {"desc": "Software licence / SaaS / implementation: grey area", "ambiguous": true},
+  "unknown": {"desc": "Cannot be determined", "ambiguous": true}
+ }
+}
